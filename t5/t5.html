@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="t5.css">
+  <script src="t5.js" type="module"></script>
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <h1>Restaurants</h1>
+      <section id="filter-by-company">
+        <button id="reset">Reset</button>
+        <button id="sodexo">Sodexo</button>
+        <button id="compass">Compass</button>
+      </section>
+      <section id="restaurants">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Company</th>
+            </tr>
+          </thead>
+          <!-- add restaurants here -->
+          <tbody id="target">
+
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+  <!-- modal -->
+  <dialog id="modal">
+    <header>
+      <button class="close-button">Close</button>
+    </header>
+    <!-- add restaurant info here when restaurant is clicked -->
+    <article id="modal-content"></article>
+  </dialog>
+  <dialog id="user-modal" open>
+    <header>
+      <button class="close-button">Close</button>
+    </header>
+    <p>Kirjautuminen/Rekisteröityminen</p>
+  </dialog>
+</body>
+
+</html>
